@@ -24,7 +24,11 @@ namespace SimuladorEmprestimo.Application.Services {
 
             var produtos = await _produtoRepository.GetAllAsync();
 
-            var produtoAdequado = produtos.FirstOrDefault(p => requestDto.ValorSolicitado >= p.ValorMinimo && requestDto.ValorSolicitado <= p.ValorMaximo && requestDto.PrazoMeses >= p.PrazoMinimoMeses && requestDto.PrazoMeses <= p.PrazoMaximoMeses);
+            var produtoAdequado = produtos.FirstOrDefault(p => 
+            requestDto.ValorSolicitado >= p.ValorMinimo && 
+            requestDto.ValorSolicitado <= p.ValorMaximo && 
+            requestDto.PrazoMeses >= p.PrazoMinimoMeses && 
+            requestDto.PrazoMeses <= p.PrazoMaximoMeses);
 
             if (produtoAdequado == null) {
                 throw new InvalidOperationException("Nenhum produto adequado encontrado para os critérios informados.");

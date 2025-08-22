@@ -1,13 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿// Garanta que estes 'usings' estão no topo do seu arquivo
+using Microsoft.EntityFrameworkCore;
 using SimuladorEmprestimo.Domain.Entities;
 using SimuladorEmprestimo.Domain.Interfaces;
 using SimuladorEmprestimo.Infrastructure.Data;
-using SimuladorEmprestimo.Infrastructure.Repositories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SimuladorEmprestimo.Infrastructure.Repositories {
@@ -17,8 +13,9 @@ namespace SimuladorEmprestimo.Infrastructure.Repositories {
         public ProdutoRepository(AppDbContext context) {
             _context = context;
         }
-        public async Task<IEnumerable<Produto>> GetAllAsync() {
 
+        public async Task<IEnumerable<Produto>> GetAllAsync() {
+            // Esta linha depende do "using Microsoft.EntityFrameworkCore;"
             return await _context.Produtos.ToListAsync();
         }
     }

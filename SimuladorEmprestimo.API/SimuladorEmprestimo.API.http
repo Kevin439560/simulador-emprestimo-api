@@ -1,0 +1,6 @@
+@SimuladorEmprestimo.API_HostAddress = http://localhost:5195
+
+GET {{SimuladorEmprestimo.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

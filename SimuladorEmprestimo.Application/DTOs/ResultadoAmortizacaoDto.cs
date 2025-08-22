@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace SimuladorEmprestimo.Application.DTOs {
     public class ResultadoAmortizacaoDto {
         public String Tipo { get; set; }
-        public List<ParcelaDto> Parcelas { get; set; }
+        public List<ParcelaDto> Parcelas { get; set; } = new List<ParcelaDto>();
+
     }
 }

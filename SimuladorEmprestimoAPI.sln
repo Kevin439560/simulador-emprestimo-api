@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladorEmprestimo.API", "SimuladorEmprestimoAPI\SimuladorEmprestimo.API.csproj", "{36B44194-B5AE-4FF6-AB31-C51C80E18FA2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladorEmprestimo.Domain", "SimuladorEmprestimo.Domain\SimuladorEmprestimo.Domain.csproj", "{1979B402-DB8A-4215-9622-E51CED7A9F93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladorEmprestimo.Application", "SimuladorEmprestimo.Application\SimuladorEmprestimo.Application.csproj", "{DB5ECD29-9BFB-4E2B-A713-766543F91380}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladorEmprestimo.Infrastructure", "SimuladorEmprestimo.Infrastructure\SimuladorEmprestimo.Infrastructure.csproj", "{33AF4BC1-E132-43C5-B896-771DC26CE5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladorEmprestimo.API", "SimuladorEmprestimo.API\SimuladorEmprestimo.API.csproj", "{F9953DC2-7C02-42DC-B502-B72374C3BABA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{36B44194-B5AE-4FF6-AB31-C51C80E18FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36B44194-B5AE-4FF6-AB31-C51C80E18FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36B44194-B5AE-4FF6-AB31-C51C80E18FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36B44194-B5AE-4FF6-AB31-C51C80E18FA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1979B402-DB8A-4215-9622-E51CED7A9F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1979B402-DB8A-4215-9622-E51CED7A9F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1979B402-DB8A-4215-9622-E51CED7A9F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{33AF4BC1-E132-43C5-B896-771DC26CE5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33AF4BC1-E132-43C5-B896-771DC26CE5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33AF4BC1-E132-43C5-B896-771DC26CE5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9953DC2-7C02-42DC-B502-B72374C3BABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9953DC2-7C02-42DC-B502-B72374C3BABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9953DC2-7C02-42DC-B502-B72374C3BABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9953DC2-7C02-42DC-B502-B72374C3BABA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

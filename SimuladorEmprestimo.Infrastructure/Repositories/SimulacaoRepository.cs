@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 namespace SimuladorEmprestimo.Infrastructure.Repositories {
     public class SimulacaoRepository : ISimulacaoRepository{
 
-        private readonly AppDbContext _context;
+        private readonly LocalDbContext _context;
 
-        public SimulacaoRepository(AppDbContext context) {
+        public SimulacaoRepository(LocalDbContext context) {
             _context = context;
         }
         public async Task AddAsync(Simulacao simulacao) {
 
-            await _context.Simulacaos.AddAsync(simulacao);
+            await _context.Simulacoes.AddAsync(simulacao);
 
             await _context.SaveChangesAsync();
 
